@@ -1,0 +1,134 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- Fonts and stuff -->
+	<title>Scalable Image-based Indoor Scene Rendering with Reflections</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+	<script src="js/google-code-prettify/prettify.js"></script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="content-inner">
+			<div class="section head">
+
+				<h1> Scalable Image-based Indoor Scene Rendering <br> with Reflections</h1>
+
+				<div class="authors">
+						<b>Jiamin Xu</b><sup> 1</sup>&#160;&#160;
+						<b>Xiuchao Wu</b><sup> 1</sup>&#160;&#160;
+						<b>Zihan Zhu</b><sup> 1</sup>&#160;&#160;
+						<b>Qixing Huang</b><sup> 3</sup>&#160;&#160;
+						<b>Yin Yang</b><sup> 2</sup>&#160;&#160;
+						<b>Hujun Bao</b><sup> 1</sup>&#160;&#160;
+						<b>Weiwei Xu</b><sup> 1</sup>&#160;&#160;
+				</div>
+
+				<div class="affiliations">
+					<sup>1</sup><a target="_blank">State Key Lab of CAD&CG, Zhejiang University</a>&#160;&#160;
+					<sup>3</sup><a target="_blank">University of Texas at Austin</a>&#160;&#160;
+					<sup>2</sup><a target="_blank">Clemson University</a>&#160;&#160;
+					</div>
+				<div class="venue"><a target="_blank">ACM Transactions on Graphics (SIGGRAPH 2021)</a></div>
+
+				<div class="section downloads">
+					<!--<h2>Downloads</h2>-->
+					<!--<center>-->
+						<ul></ul>
+							<li class="grid">
+								<div class="griditem">
+									<a href="#goto_here" target="_blank"
+										class="imageLink"><img src="images/data_ico.png"></a><br />
+									<a href="#goto_here"> Data </a>
+
+								</div>
+							</li>
+							<!--<li class="grid">
+								<div class="griditem">
+									<a href="" target="_blank"
+										class="imageLink"><img src="images/github.png"></a><br />
+									<a href=""> Code <br />(coming soon) </a>
+
+								</div>
+							</li>-->
+							<li class="grid">
+								<div class="griditem">
+									<a href="ReflectiveIBR.pdf" target="_blank"
+										class="imageLink"><img src="images/paper.png"></a><br />
+									<a href=""> Paper </a>
+
+								</div>
+							</li>
+						</ul>
+					<!--</center>-->
+				</div>
+			</div>
+
+
+
+			<div class="section abstract">
+				<h2>Abstract</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<div class="col" style="text-align:center">
+						<img class="thumbnail" src="images/flowchart.png" style="width:90%; margin-bottom:2px">
+						<!--<embed src="images/flowchart.pdf" width="500" height="375" type="application/pdf">-->
+					</div>
+				</div>
+				<p style="text-align:justify;">
+					This paper proposes a novel scalable image-based rendering (IBR) pipeline for indoor scenes with reflections. We make substantial progress towards three sub-problems in IBR, namely, depth and reflection reconstruction, view selection for temporally coherent view-warping, and smooth rendering refinements. First, we introduce a global-mesh-guided alternating optimization algorithm that robustly extracts a two-layer geometric representation. The front and back layers encode the RGB-D reconstruction and the reflection reconstruction, respectively. This representation minimizes the image composition error under novel views, enabling accurate renderings of reflections. Second, we introduce a novel approach to select adjacent views and compute blending weights for smooth and temporal coherent renderings. The third contribution is a supersampling network with a motion vector rectification module that refines the rendering results to improve the final output's temporal coherence. These three contributions together lead to a novel system that produces highly realistic rendering results with various reflections. The rendering quality outperforms state-of-the-art IBR or neural rendering algorithms considerably. 
+				</p>
+			</div>
+
+			<div class="section abstract">
+				<h2>Full Video</h2><br>
+				<center>
+					<iframe width="640" height="360" src="mp4/ReflectiveIBR_video_compressed.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<!--iframe src="./data/video.mp4" allow="autoplay; encrypted-media" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="560" height="315" frameborder="0"></iframe-->
+					<!--<p style="font-size:11px; text-align:center">
+					Download Video: <a href="data/video.mp4" target="_blank">HD</a> (MP4, 111 MB)
+				</p>-->
+				</center>
+			</div>
+
+			<div class="section abstract">
+				<h2 id="goto_here">Dataset</h2><h4><font color="#0500FF"> Extraction Code: Reflective-IBR </font></h4><br>
+				<div class="row" style="margin-bottom:5px">
+					<div class="col" style="text-align:center">
+						<h3>Hotel Room</h3>
+						<a href="https://pan.baidu.com/s/1NE5sIudE4QorUuXbS8GZbw">
+							<img class="thumbnail" src="images/hotel_room.png" style="width:80%; margin-bottom:2px">
+						</a>
+						<h3>Living Room 1</h3>
+						<img class="thumbnail" src="images/living_room_1.png" style="width:80%; margin-bottom:2px">
+						<h3>Living Room 2</h3>
+						<img class="thumbnail" src="images/living_room_2.png" style="width:80%; margin-bottom:2px">
+						<h3>Meeting Room 1</h3>
+						<img class="thumbnail" src="images/meeting_room_1.png" style="width:80%; margin-bottom:2px">
+						<h3>Meeting Room 2</h3>
+						<img class="thumbnail" src="images/meeting_room_2.png" style="width:80%; margin-bottom:2px">
+					</div>
+				</div>
+			</div>
+
+			<div class="section abstract">
+				<h2>Citation</h2>
+				<div class="section bibtex" style="text-align:left; margin-left: 40px; margin-right: 40px">
+<pre>
+@inproceedings{xu2021scalable,
+  title={Scalable Image-based Indoor Scene Rendering},
+  author={Xu, Jiamin and Wu, Xiuchao and Zhu, Zihan and Huang, Qixing and Yang, Yin and Bao, Hujun and Xu, Weiwei},
+  booktitle={ACM TOG},
+  year={2021}
+}
+</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
