@@ -12,9 +12,9 @@ header {
 body {
     margin: auto;
     padding: 0;
-    background-color: #eee;;
+    background-color: #eee;
 	font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-    font-size:18.0px;
+    font-size:18.5px;
 }
 
 a img {
@@ -27,7 +27,6 @@ hr {
 	border: 2px solid #ddd;
 	margin: 5px 0;
 }
-
 
 /*
 div.content {
