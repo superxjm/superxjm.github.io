@@ -13,7 +13,7 @@ body {
     margin: auto;
     padding: 0;
     background-color: #ffffff; /* ✅ 改成白色背景 */
-    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-size: 18.5px;
 }
 
@@ -221,3 +221,62 @@ h3 {
     font-size: 30px;
     margin-bottom: 5px;
 }
+
+td.image-column2 img {
+    width: 260px;          /* 固定宽度 */
+    height: 115px;         /* 固定高度 */
+    object-fit: fill;      /* ✅ 强制拉伸，不保持比例 */
+    border-radius: 8px;   /* ✅ 圆角 */
+    background-color: #fff;/* ✅ 给padding区留白背景 */
+    border: 1px solid #ddd;/* ✅ 边框 */
+    padding: 3px;          /* ✅ 图片和边框之间的间距 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ✅ 阴影 */
+    display: block;
+    margin: 0 auto;        /* ✅ 居中显示 */
+}
+
+/* 让头像和文字在垂直方向对齐 */
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-table td {
+    vertical-align: middle;
+}
+
+/* 调整头像列样式 */
+.image-column img {
+    display: block;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* 居中 */
+}
+
+/* 调整右侧文字列整体位置与间距 */
+.description-column {
+    padding-left: 35px;  /* 拉开头像和文字距离 */
+    vertical-align: middle;
+}
+
+/* 优化名字与头衔的行距 */
+.description-column h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description-column h5 {
+    margin: 5px 0 3px 0; /* 缩小上下间距 */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 缩小邮箱和正文之间的空隙 */
+.description-column p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
