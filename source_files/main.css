@@ -280,3 +280,427 @@ td.image-column2 img {
     line-height: 1.5;
 }
 
+
+
+/* ================================
+   2026 academic homepage refinements
+   ================================ */
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
+                 "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.68;
+    letter-spacing: 0.005em;
+}
+
+div.content {
+    max-width: 1180px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.top_block {
+    padding-top: 34px;
+    padding-bottom: 12px;
+}
+
+/* Profile */
+.about-table {
+    margin-bottom: 10px;
+}
+
+.image-column img {
+    width: 172px;
+    border-radius: 8px;
+}
+
+.description-column {
+    padding-left: 30px;
+}
+
+.description-column h4 {
+    margin: 0 0 2px 0;
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+.description-column h5 {
+    margin: 4px 0 6px 0;
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #444;
+}
+
+.description-column p {
+    margin: 4px 0;
+    line-height: 1.65;
+}
+
+.about-table td[colspan="2"] p {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    line-height: 1.72;
+}
+
+/* Section titles */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e4e4e4;
+    margin: 8px 0 18px;
+}
+
+/* Publication layout */
+.publication-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+.publication-table tr > td {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    vertical-align: middle;
+}
+
+td.image-column2 {
+    width: 260px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+td.description-column2 {
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+td.image-column2 img {
+    width: 250px;
+    height: 118px;
+    object-fit: fill;       /* 完整显示整张图，不再裁掉上下/左右内容 */
+    object-position: center;
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+    padding: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+div.paper_title {
+    padding-bottom: 4px;
+    font-size: 17px;
+    line-height: 1.42;
+    font-weight: 650;
+    letter-spacing: -0.005em;
+    color: #171717;
+}
+
+div.paper_authors {
+    margin: 1px 0 2px;
+    font-size: 14.5px;
+    line-height: 1.58;
+    color: #333;
+}
+
+a.author {
+    font-size: inherit;
+    color: inherit;
+}
+
+div.paper_venue {
+    margin-top: 1px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: #333;
+}
+
+div.paper_materials {
+    margin-top: 3px;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+span.link {
+    padding-right: 8px;
+}
+
+a:link,
+a:visited {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* Keep awards/footer visually quiet */
+#selected_awards,
+a[name="selected_awards"] {
+    scroll-margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+    body {
+        font-size: 15.5px;
+    }
+
+    div.content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-table,
+    .about-table tbody,
+    .about-table tr,
+    .about-table td,
+    .publication-table,
+    .publication-table tbody,
+    .publication-table tr,
+    .publication-table td {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    td.image-column,
+    td.image-column2 {
+        padding: 0 0 10px 0;
+    }
+
+    td.description-column,
+    td.description-column2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .image-column img {
+        width: 150px;
+        margin: 0;
+    }
+
+    td.image-column2 img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 2.12 / 1;
+        object-fit: fill;   /* 移动端同样完整显示 */
+        object-position: center;
+        margin: 0;
+    }
+
+    h3 {
+        margin-top: 26px;
+        font-size: 22px;
+    }
+}
+
+
+/* Selected awards */
+.awards-section {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.awards-list {
+    margin: 6px 0 16px 0;
+    padding-left: 22px;
+    font-size: 15.5px;
+    line-height: 1.65;
+}
+
+.awards-list li {
+    margin: 4px 0;
+}
+
+.award-cn {
+    color: #666;
+}
+
+/* =====================================
+   Profile layout fix for new HTML markup
+   ===================================== */
+.profile {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    column-gap: 34px;
+    align-items: start;
+    padding: 8px 0 12px;
+}
+
+.profile-photo {
+    width: 150px;
+}
+
+.profile-photo img {
+    display: block;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.profile-main {
+    min-width: 0;
+}
+
+.profile-main h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.profile-cn {
+    font-weight: 650;
+}
+
+.profile-role {
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+.profile-email {
+    margin-bottom: 19px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.profile-bio {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.72;
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+}
+
+.profile-bio strong {
+    font-weight: 650;
+}
+
+.research-interests {
+    margin: 16px 0 0;
+    padding-top: 13px;
+    border-top: 1px solid #ededed;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 760px) {
+    .profile {
+        display: block;
+        padding-top: 0;
+    }
+
+    .profile-photo {
+        width: 132px;
+        margin-bottom: 18px;
+    }
+
+    .profile-photo img {
+        width: 132px;
+        height: 168px;
+    }
+
+    .profile-main h1 {
+        font-size: 27px;
+    }
+
+    .profile-bio,
+    .research-interests {
+        text-align: left;
+        hyphens: none;
+    }
+}
+
+
+/* Publication material links: unavailable items stay visible but muted */
+.paper_materials .disabled-link {
+    color: #a8a8a8;
+    cursor: default;
+    user-select: none;
+}
+
+/* Author names are plain text rather than hyperlinks */
+.paper_authors .author {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Section heading + divider for Preprints / Publications */
+h2 {
+    margin: 34px 0 8px;
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: #1f1f1f;
+}
+
+.section-rule {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 18px;
+    background: #e6e6e6;
+}
+
+/* Give the Publications section a little more breathing room */
+.publication-table + h2 {
+    margin-top: 42px;
+}
+
+@media (max-width: 760px) {
+    h2 {
+        margin-top: 28px;
+        font-size: 24px;
+    }
+
+    .section-rule {
+        margin-bottom: 15px;
+    }
+}
